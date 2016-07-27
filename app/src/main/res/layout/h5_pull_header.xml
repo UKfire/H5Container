@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ytying.h5container.refresh.H5PullHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_overView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/top_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="10dip"
+            android:text="网页由 m.alitrip.com 提供"
+            android:textColor="@color/font_color_dark_gray"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/pullrefresh_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/pullrefresh_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_webview_refresh_arrow" />
+
+                <TextView
+                    android:id="@+id/pullrefresh_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="下拉刷新"
+                    android:textColor="@color/font_color_dark_gray"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pullrefresh_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/font_color_dark_gray"
+                android:textSize="13dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pullrefresh_progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+
+</com.ytying.h5container.refresh.H5PullHeader>
